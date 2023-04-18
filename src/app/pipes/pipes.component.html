@@ -12,4 +12,5 @@
 <!-- haciendolo con una funcion -->
 <p>Estado con función:{{getTextState()}}</p> <!--no es recomendable ejecutar funciones dentro del html, mismo angular no lo considera buena práctica, hace que se ejecuta muchas veces la función, c uando se carga y cuando se usa en el html -->
 
-
+<button [routerLink]="['/estructural']" routerLinkActive="active">Ir a Estructural</button>
+<button [routerLink]="['/pipes']" routerLinkActive="active">Ir a Pipes</button>

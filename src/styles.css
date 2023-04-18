@@ -12,4 +12,11 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.active{
+  background-color: brown;
+  color: #fff;
+}
+
+
 /* You can add global styles to this file, and also import other style files */

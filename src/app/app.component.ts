@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularprojectweb';
+  constructor(){
+    localStorage.setItem('id','1234');
+  }
 }
