@@ -1,1 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&display=swap');
+
+.error{
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: #000;
+  background-color: rgb(255, 77, 77);
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* You can add global styles to this file, and also import other style files */

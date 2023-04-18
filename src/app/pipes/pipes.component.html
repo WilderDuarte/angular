@@ -1,0 +1,15 @@
+{{name | uppercase}} - {{nameTwo}} - {{name | titlecase}} - {{name | lowercase}}
+<br>
+{{date}} <br>
+{{date | date}} <br>
+{{date | date: 'short'}} <br>
+{{date | date: 'shortDate'}} <br>
+{{date | date: 'shortTime'}} <br>
+<br>
+<p>Estado de transsacción: {{estado | estados}}</p>
+<button (click)="changeState()">Cambiar Estado</button>
+<button (click)="print()">CLICK</button>
+<!-- haciendolo con una funcion -->
+<p>Estado con función:{{getTextState()}}</p> <!--no es recomendable ejecutar funciones dentro del html, mismo angular no lo considera buena práctica, hace que se ejecuta muchas veces la función, c uando se carga y cuando se usa en el html -->
+
+

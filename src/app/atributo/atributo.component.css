@@ -1,0 +1,13 @@
+.info{
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: #000;
+  background-color: rgb(188, 136, 237);
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
