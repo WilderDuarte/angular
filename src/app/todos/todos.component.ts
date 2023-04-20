@@ -13,6 +13,12 @@ export class TodosComponent implements OnInit {
   constructor(private todoService: TodoService) {}
 
   ngOnInit(): void {
+
+    // puedo hacerlo para el mismo compoentne, pareceria que no tiene sentido pero funciona
+    // this.todoService.posts$.subscribe((res) => {
+    //   console.log('Nueva data: ', res);
+    // });
+
       this.todoService.getTodos().subscribe( (res:any) => {
         // console.log(res);
         this.todos = res;
@@ -22,6 +28,10 @@ export class TodosComponent implements OnInit {
       this.todoService.getComments(10).subscribe((res) => console.log('Comments: ', res));
 
       this.todoService.getPosts().subscribe((res) => console.log('Posts: ', res));
+  }
+// creación de un observable
+  updatePost() {
+    this.todoService.postSource.next([1,2,3,4,5]);
   }
 
 }

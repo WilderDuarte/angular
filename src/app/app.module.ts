@@ -15,6 +15,7 @@ import { FormulariosComponent } from './formularios/formularios.component';
 import { TodosComponent } from './todos/todos.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'
 import { InterceptorService } from './services/interceptor.service';
+import { TodoComponent } from './todos/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { InterceptorService } from './services/interceptor.service';
     PipesComponent,
     EstadosPipe,
     FormulariosComponent,
-    TodosComponent
+    TodosComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
