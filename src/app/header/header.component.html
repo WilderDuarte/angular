@@ -1,3 +1,11 @@
-<h1>El resultado es: {{ resultado }}</h1>
+<hr>
+<button [routerLink]="['/estructural']" routerLinkActive="active">Ir a Estructural</button>
+<button [routerLink]="['/pipes']" routerLinkActive="active">Ir a Pipes</button>
+<button [routerLink]="['/compra']" routerLinkActive="active">Ir a Compra</button>
+<button [routerLink]="['/venta']" routerLinkActive="active">Ir a Venta</button>
+<button [routerLink]="['/formularios']" routerLinkActive="active">Form</button>
+<button [routerLink]="['/todos']" routerLinkActive="active">Todos</button>
+<hr>
 
+<h1>El resultado es: {{ resultado }}</h1>
 <button (click)="sumarvar(1,5)">SUMAR</button>

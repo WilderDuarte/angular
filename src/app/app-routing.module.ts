@@ -6,6 +6,8 @@ import { ListadoComponent } from './compra/listado/listado.component';
 import { NuevaCompraComponent } from './compra/nueva-compra/nueva-compra.component';
 import { HistorialCompraComponent } from './compra/historial-compra/historial-compra.component';
 import { AuthGuard } from './auth.guard';
+import { FormulariosComponent } from './formularios/formularios.component';
+import { TodosComponent } from './todos/todos.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'pipes', pathMatch: 'full'}, // Para el login sin ruta en path, pero con pipes podría enviar a un index por ejemplo
@@ -21,7 +23,9 @@ const routes: Routes = [
   {
     path: 'venta',
     loadChildren: () => import('./venta/venta.module').then((m) => m.VentaModule) ,
-  }
+  },
+  {path: 'formularios', component: FormulariosComponent },
+  {path: 'todos', component: TodosComponent}
 ];
 
 @NgModule({

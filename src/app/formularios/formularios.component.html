@@ -1,0 +1,34 @@
+<p>formularios works!</p>
+<div class="">
+    <input type="text" placeholder="nombre" [formControl]="name">
+    Valor: {{name.value}}
+</div>
+
+<div class="">
+  <input type="checkbox" placeholder="nombre" [formControl]="isChecked">
+  {{isChecked.value}}
+  <!-- <pre>
+    <code>
+      {{isChecked | json}}
+    </code>
+  </pre> -->
+</div>
+
+<button [disabled]="name.errors">ENVIAR</button>
+
+<hr>
+<h2>FORM GROUP</h2>
+<form [formGroup]="form">
+  <div class="">
+    <input type="text" placeholder="nombre" formControlName="nametwo">
+    <pre>
+      <code>{{form.get('nametwo')?.value}}</code>
+    </pre>
+  </div>
+  <div class="">
+    <input type="checkbox" formControlName="checkedtwo">
+    <!-- {{checkedtwo.value}} -->
+    {{form.get('checkedtwo')?.value}}
+  </div>
+</form>
+<button [disabled]="form.get('nametwo')?.errors">ENVIAR</button>
